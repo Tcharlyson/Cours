@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= 'Ajouter un utilisateur'
+  body
+    form(method='POST' action='/users/'+ message.id +'?_method=' + method)
+      label Pseudo :
+      input(type='text', name='pseudo', value=message.pseudo)
+      br
+      label Email :
+      input(type='text', name='email', value=message.email)
+      br
+      label Firstname :
+      input(type='text', name='firstname', value=message.firstname)
+      br
+      label Lastname :
+      input(type='text', name='lastname', value=message.lastname)
+      input(type='submit')

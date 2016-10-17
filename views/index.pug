@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title= 'Liste des utilisateurs'
+  body
+    each item in message
+        li
+          | ID : #{item.id} / Pseudo : #{item.pseudo} / Email : #{item.email} / Name : #{item.firstname} #{item.lastname}
